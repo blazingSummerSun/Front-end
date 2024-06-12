@@ -1,0 +1,30 @@
+body {
+    background-image: linear-gradient(to bottom, darkblue, purple);
+    height: 125vh;
+    margin: 0;
+    background-size: cover;
+}
+.name{
+    color: lightyellow;
+    font-family: "Comic Sans MS", math;
+    text-align: center;
+}
+#bio {
+    color: lightyellow;
+    font-family: "Comic Sans MS", math;
+    text-align: center;
+}
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+}
+.list {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+    font-size: 20px;
+}
