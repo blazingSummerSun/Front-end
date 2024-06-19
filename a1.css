@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(to bottom, darkblue, purple);
-    height: 125vh;
+    height: 100%;
     margin: 0;
     background-size: cover;
 }
@@ -35,6 +35,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+.links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .project {
     color: wheat;
@@ -44,4 +50,31 @@ body {
     color: wheat;
     font-family: "Comic Sans MS", math;
     font-size: 20px;
+}
+#comic-button {
+    background-image: linear-gradient(to bottom, blueviolet, mediumpurple);
+    font-family: "Comic Sans MS", math;
+    font-size: 15px;
+    color: black;
+}
+#comic-page-display {
+    border: 50px solid black;
+    flex-direction: row;
+}
+#comic-title {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+    font-size: 30px;
+}
+#comic-date {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+    font-size: 20px;
+}
+#close-button {
+    background-image: linear-gradient(to bottom, blueviolet, mediumpurple);
+    color: black;
+    font-family: "Comic Sans MS", math;
+    font-size: 15px;
+
 }
