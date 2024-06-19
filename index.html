@@ -8,6 +8,7 @@
 <body>
 <div id="gradient-container"></div>
 <header>
+
     <h1 style="text-align: center; margin-top: 100px" class="name">
         Adel Gaznanov
     </h1>
@@ -30,7 +31,7 @@
     </div>
 </header>
 
-<div>
+<div class="links">
     <a href="https://mail.google.com" id="email">
         Email
     </a>
@@ -57,7 +58,7 @@
 </h2>
 <ul class="list" style="margin-left: 300px">
     <li>
-        Innopolis University, Russia. 2023-Present (9 months)
+        Innopolis University, Russia. 2023-Present
     </li>
 </ul>
 <h2 class="project" style="text-align: center">
@@ -141,5 +142,71 @@
         English level 5.5 IELTS
     </li>
 </ul>
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <a id="comic-page">
+        <img src="jake.png" alt="comic page">
+    </a>
+    <p><button id="comic-button">Get the comic page</button></p>
+</div>
+
+<p id="identifier"></p>
+<p id="name"></p>
+<p id="date-display"></p>
+<div id="comic-page-display" style="position: absolute; top: 30%; left: 28%; visibility: hidden">
+    <button id="close-button" style="position: absolute; bottom: -5%; right: 45%">Close</button>
+</div>
+
+<div id="comic-title" style="position: absolute; top: 30%; left: 45%">
+</div>
+<div id="comic-date" style="position: absolute; bottom: -18%; right: 30%"></div>
+
+
+<script>
+    const getPageButton = document.getElementById('comic-button')
+    const picture = document.createElement('img')
+    const closeButton = document.getElementById('close-button')
+    const identifier = fetch('https://fwd.innopolis.university/api/hw2?email=a.gaznanov@innopolis.university')
+            .then(response => {
+                return response.json()
+            })
+            .then(data => {
+                return data
+            })
+
+    async function getComicPage() {
+        const params = new URLSearchParams()
+        params.append('id', await identifier)
+        return fetch('https://fwd.innopolis.university/api/comic?' + params.toString())
+                .then(response => {
+                    return response.json()
+                }).then(data => {
+                    const {img, year, month, safe_title, alt, day} = data
+                    const date = new Date(year, month-1, day)
+                    const currentDate = date.toLocaleDateString()
+
+                    picture.src = img
+                    picture.alt = alt
+                    picture.style.width = '750px'
+                    picture.style.height = '750px'
+                    picture.style.display = 'block'
+                    const imageContainer = document.getElementById('comic-page-display')
+                    const comicTitle = document.getElementById('comic-title')
+                    const comicDate = document.getElementById('comic-date')
+                    imageContainer.appendChild(picture)
+                    imageContainer.style.visibility = 'visible'
+                    comicTitle.textContent = safe_title
+                    comicDate.textContent = currentDate
+                    closeButton.style.visibility = 'visible'
+                    closeButton.addEventListener('click', function(){
+                        comicTitle.textContent = ""
+                        comicDate.textContent = ""
+                        imageContainer.style.visibility = 'hidden'
+                        closeButton.style.visibility = 'hidden'
+                    })
+                })
+    }
+    getPageButton.addEventListener('click', getComicPage);
+</script>
+
 </body>
 </html>
