@@ -1,0 +1,51 @@
+#image-container {
+    text-align: center;
+}
+
+#comic-page-display {
+    border: 50px solid black;
+    flex-direction: row;
+    height: 750px;
+    width: 750px;
+    position: absolute;
+    top: 38%;
+    left: 27%;
+}
+
+#comic-title {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    left: 44%;
+}
+#comic-date {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+    font-size: 20px;
+    position: absolute;
+    bottom: -28%;
+    right: 30%;
+}
+#close-button{
+    background-image: linear-gradient(to bottom, blueviolet, red);
+    text: "X";
+    color: black;
+    font-family: "Comic Sans MS", math;
+    font-size: 15px;
+    top: 39%;
+    position: absolute;
+    right: 29%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+button {
+    background-image: linear-gradient(to bottom, blueviolet, mediumpurple);
+    font-family: "Comic Sans MS", math;
+    font-size: 17px;
+    color: black;
+    margin-left: 47.6%;
+}

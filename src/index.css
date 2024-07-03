@@ -1,0 +1,9 @@
+body {
+    background: linear-gradient(to bottom, darkblue, purple); /* Example gradient from orange to pink */
+    height: 130vh; /* Ensures the body takes the full height of the viewport */
+    display: flex;
+}
+
+#root {
+    width: 100%;
+}
