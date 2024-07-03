@@ -1,0 +1,35 @@
+.bio_name {
+    margin-top: 4%;
+}
+.bio__description {
+    margin-top: 0.3%;
+    color: lightyellow;
+}
+
+.bio-container {
+    font-family: "Comic Sans MS", math;
+    color: lightyellow;
+    text-align: center;
+}
+
+#email {
+    color: lightseagreen;
+    margin-left: 1%;
+}
+#tg-link {
+    color: lightseagreen;
+    margin-left: 2.5%;
+}
+#gh-link {
+    color: lightseagreen;
+    margin-left: 2.2%;
+}
+#location {
+    color: lightseagreen;
+    margin-left: 2.5%;
+}
+#education {
+    margin-left: 15.5%;
+    font-size: 20px;
+    text-align: left;
+}
