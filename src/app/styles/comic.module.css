@@ -1,0 +1,31 @@
+#heading {
+    margin-top: 3%;
+    text-align: center;
+    color: lightyellow;
+    font-family: "Comic Sans MS", math;
+}
+
+#comicDate {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15%;
+    left: 41%
+}
+#comicPage {
+     border: 40px solid black;
+     flex-direction: row;
+     height: 550px;
+     width: 550px;
+    margin-top: 5%;
+    margin-left: 33.5%;
+}
+#comicTitle {
+    color: wheat;
+    font-family: "Comic Sans MS", math;
+    font-size: 30px;
+    position: absolute;
+    top: 13.3%;
+    left: 44.5%;
+}

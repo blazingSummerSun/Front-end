@@ -1,0 +1,27 @@
+#title {
+    margin-top: 3%;
+    text-align: center;
+    color: lightyellow;
+    font-family: "Comic Sans MS", math;
+}
+#projectContainer {
+    margin-left: 15.5%;
+    text-align: left;
+    color: lightyellow;
+    font-family: "Comic Sans MS", math;
+    font-size: 20px;
+
+}
+
+.projectLink {
+    color: lightseagreen;
+    margin-left: 0.5%;
+}
+.projectLinkLast{
+    color: lightseagreen;
+    margin-left: 0%;
+}
+
+.ul {
+    margin-bottom: 1%;
+}

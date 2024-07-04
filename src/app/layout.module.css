@@ -1,0 +1,56 @@
+.bioButton {
+    padding: 10px 20px;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 41.2%;
+    margin-top: 1%;
+
+}
+
+.projectsButton {
+    padding: 10px 25px;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 1%;
+}
+
+.comicButton {
+    padding: 10px 30px;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 1%;
+}
+
+.bioButton:hover {
+    background-color: dodgerblue;
+    conte: center;
+}
+
+.projectsButton:hover {
+    background-color: dodgerblue;
+    conte: center;
+}
+
+.comicButton:hover {
+    background-color: dodgerblue;
+    conte: center;
+}
+
+.footerDescription {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

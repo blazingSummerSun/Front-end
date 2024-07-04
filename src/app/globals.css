@@ -1,0 +1,5 @@
+body {
+    background: linear-gradient(to bottom, darkblue, purple);
+    height: 130vh;
+    overflow: hidden;
+}

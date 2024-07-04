@@ -1,0 +1,21 @@
+
+.aboutText {
+    font-family: "Comic Sans MS";
+    color: lightyellow;
+    margin-top: 3%;
+    text-align: center;
+}
+.education {
+    margin-left: 21.5%;
+    font-size: 20px;
+    text-align: left;
+}
+
+.skillsContainer {
+    margin-left: 21.5%;
+    font-size: 20px;
+    color: lightyellow;
+    font-family: "Comic Sans MS", math;
+    line-height: 1.5em;
+    text-align: left;
+}
